@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="30dp">
+
+    <!--    for multiple ui elements, we use relative layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        textview for book name-->
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Book Name"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:layout_marginTop="10dp"/>
+
+        <!--        textview for book author-->
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookName"
+            android:layout_marginTop="10dp"
+            android:text="Author Name"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true" />
+
+        <!--        imageview for book pic-->
+        <ImageView
+            android:id="@+id/bookImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/bookAuthor"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
